@@ -1,9 +1,12 @@
 en:
   base_title: "Flower Shop"
+  sign: "Sign up"
+  log_in: "Log in"
   static_pages:
     home:
       title: "Home"
       h1_tag: "This is home page"
+      sig: "Sign up now!"
     product:
       title: "Product"
       h1_tag: "This is product page"
@@ -13,3 +16,42 @@ en:
     contact:
       title: "Contact"
       h1_tag: "This is contact page"
+  users:
+    show:
+      us: "User not found!"
+    create:
+      welcome: "Welcome to Flower Shop!"
+    new:
+      sign: "Sign up"
+      this: "This will be a signup page for new users."
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      con: "Password confirmation"
+      creat: "Create my account"
+  shared:
+    error_messages:
+      this: "The form contains "
+      err: "error"
+  sessions:
+    new:
+      log: "Log in"
+      new: "New user?"
+      sign: "Sign up now!"
+      remember: "Remember me on this computer"
+    create:
+      log: "Log in"
+      sign: "Sign up now!"
+      inv: "Invalid email/password combination."
+    destroy:
+  layouts:
+    header:
+      l_in: "Log in"
+      product: "Product"
+      contact: "Contact"
+      about: "About"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      l_out: "Log out"

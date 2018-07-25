@@ -1,9 +1,12 @@
 vi:
   base_title: "Cửa hàng hoa tươi"
+  sign: "Đăng ký"
+  log_in: "Đăng nhập"
   static_pages:
     home:
       title: "Trang Chủ"
       h1_tag: "Đây là trang chủ"
+      sig: "Đăng ký ngay!"
     product:
       title: "Sản phẩm"
       h1_tag: "Đây là trang sản phẩm"
@@ -13,3 +16,42 @@ vi:
     contact:
       title: "Liên hệ"
       h1_tag: "Đây là trang liên hệ"
+  users:
+    show:
+      us: "Không tìm thấy người dùng này!"
+    create:
+      welcome: "Chào mừng bạn ghé thăm Flower Shop!"
+    new:
+      sign: "Đăng ký"
+      this: "Đây là trang đăng ký cho người dùng mới."
+      name: "Tên"
+      email: "Email"
+      pass: "Mật khẩu"
+      con: "Nhập lại mật khẩu"
+      creat: "Tạo tài khoản"
+  shared:
+    error_messages:
+      this: "Bạn điền sai "
+      err: "lỗi"
+  sessions:
+    new:
+      log: "Đăng nhập"
+      new: "Bạn chưa có tài khoản?"
+      sign: "Đăng ký ngay!"
+      remember: "Nhớ mật khẩu trong lần đăng nhập tới."
+    create:
+      log: "Đăng nhập"
+      sign: "Đăng nhập ngay!"
+      inv: "Tài khoản hoặc mật khẩu không hợp lệ."
+    destroy:
+  layouts:
+    header:
+      l_in: "Đăng nhập"
+      product: "Sản phẩm"
+      contact: "Liên hệ"
+      about: "Giới thiệu"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Thông tin tài khoản"
+      settings: "Cài đặt"
+      l_out: "Đăng xuất"

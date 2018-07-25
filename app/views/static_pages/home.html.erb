@@ -1,6 +1,10 @@
- <% provide :title, t(".title") %>
- <% provide :h1_tag, t(".h1_tag") %>
+<% provide :title, t(".title") %>
+<% provide :h1_tag, t(".h1_tag") %>
 <p>
   <%= link_to "English", locale:"en" %>
   <%= link_to "Vietnamese", locale:"vi" %>
 </p>
+
+<div class="center jumbotron">
+  <%= link_to t(".sig"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
