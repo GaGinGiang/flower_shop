@@ -1,0 +1,11 @@
+users:
+  name:
+    max_length: 50
+  address:
+    max_length: 100
+  username:
+    max_length: 50
+  password:
+    min_length: 5
+  email:
+    max_length: 255

@@ -10,31 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_30_043732) do
+ActiveRecord::Schema.define(version: 2018_08_01_085554) do
 
-  create_table "categories", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "flowers", force: :cascade do |t|
-    t.string "name"
-    t.integer "category_id"
-    t.integer "supplier_id"
-    t.float "price"
-    t.float "discount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_flowers_on_category_id"
-    t.index ["supplier_id"], name: "index_flowers_on_supplier_id"
-  end
-
-  create_table "suppliers", force: :cascade do |t|
-    t.string "name"
+    t.string "sex"
+    t.string "address"
+    t.string "username"
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

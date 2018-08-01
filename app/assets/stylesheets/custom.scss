@@ -1,6 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
+@import 'color';
 
 /* header */
 .logo {
@@ -17,7 +18,7 @@
 /* footer */
 .page-footer {
   .container {
-    background-color: #e2e2e2;
+    background-color: $light-gray;
   }
   .box-html {
     margin-bottom: 20px;
@@ -27,11 +28,11 @@
       .sale-policy-block {
         margin-top: 20px;
         margin-left: 20px;
-        background-color: #f46164;
+        background-color: $red-pink;
         padding: 20px;
         font-size: 20px;
         text-transform: uppercase;
-        color: #ffffff;
+        color: $white;
       }
     }
   }
