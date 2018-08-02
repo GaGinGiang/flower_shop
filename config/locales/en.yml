@@ -39,3 +39,21 @@ en:
       ship: "No shipping charge"
       payment: "Flexible payment"
       support: "Support customer"
+  flowers:
+    new:
+      title: "Add Flower"
+      h1: "Add Flower"
+      name: "Name:"
+      description: "Description:"
+      image: "Image:"
+      price: "Price:"
+      discuont: "Discount:"
+      submit: "Create new flowers "
+      flash: "Welcome to the Flower Shop!"
+    show:
+      h1: "Information new flower"
+      name: "Name"
+      description: "Description"
+      image: "Image"
+      price: "Price"
+      discount: "Discount"

@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_30_043732) do
+ActiveRecord::Schema.define(version: 2018_07_30_081313) do
+
+  create_table "bills", force: :cascade do |t|
+    t.float "total_price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cart_details", force: :cascade do |t|
+    t.integer "quatity"
+    t.float "price"
+    t.float "discount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -22,12 +36,19 @@ ActiveRecord::Schema.define(version: 2018_07_30_043732) do
     t.string "name"
     t.integer "category_id"
     t.integer "supplier_id"
+    t.string "description"
+    t.string "image"
     t.float "price"
     t.float "discount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_flowers_on_category_id"
     t.index ["supplier_id"], name: "index_flowers_on_supplier_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "suppliers", force: :cascade do |t|

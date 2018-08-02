@@ -1,0 +1,3 @@
+flower:
+  new:
+    accept: "image/jpeg,image/gif,image/png, image/jpg"

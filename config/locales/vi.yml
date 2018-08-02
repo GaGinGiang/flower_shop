@@ -39,3 +39,21 @@ vi:
       ship: "Miễn phí vận chuyển"
       payment: "Thanh toán linh hoạt"
       support: "Hỗ trợ khách hàng"
+  flowers:
+    new:
+      title: "Thêm hoa mới"
+      h1: "Thêm hoa mới"
+      name: "Tên loài hoa:"
+      description: "Mô tả:"
+      image: "Hình ảnh:"
+      price: "Giá:"
+      discount: "Chiết khấu:"
+      submit: "Tạo hoa mới"
+      flash: "Chào mừng bạn đến với Flower Shop"
+    show:
+      h1: "Thông tin hoa mới"
+      name: "Tên loài hoa"
+      description: "Mô tả"
+      image: "Hình ảnh"
+      price: "Giá"
+      discount: "Chiết khấu"

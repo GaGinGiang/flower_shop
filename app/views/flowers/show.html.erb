@@ -1,0 +1,29 @@
+<% provide :title, @flower %>
+<h1><%= t".h1" %></h1>
+
+<div class="row">
+  <aside class="col-md-4">
+    <section class="flower_info">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th><%= t".name" %></th>
+            <th><%= t".description" %></th>
+            <th><%= t".image" %></th>
+            <th><%= t".price" %></th>
+            <th><%= t".discount" %></th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+            <th><%= @flower.name %></th>
+            <th><%= sanitize(@flower.description) %></th>
+            <th><%= image_tag(@flower.image) %></th>
+            <th><%= @flower.price %></th>
+            <th><%= @flower.discount %></th>
+          </tr>
+         </tbody>
+      </table>
+    </section>
+  </aside>
+</div>
