@@ -1,5 +1,7 @@
 class FlowersController < ApplicationController
-  def index; end
+  def index
+    @flower = Flower.all
+  end
 
   def new
     @flower = Flower.new

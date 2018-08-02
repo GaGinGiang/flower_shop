@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
+  before_action :category
+
+  def category
+    @categories = Category.all
+  end
 
   private
 

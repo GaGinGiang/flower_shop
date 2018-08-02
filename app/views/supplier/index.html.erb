@@ -1,0 +1,9 @@
+<% provide(:title, 'All Suppliers') %>
+<h1>All Suppliers</h1>
+
+<ul class="supplier">
+  <% @supplier.each do |supplier| %>
+    <li><%= supplier.name %></li>
+    <li><%= supplier.email %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,18 @@
+<div class="container" style="padding-top: 70px; padding-bottom: 30px;">
+<% @flower.each do |flower| %>
+    <div class="col-sm-4 col-md-3">
+      <div class="thumbnail">
+        <%= image_tag(flower.image) %>
+        <div class="caption">
+          <h3><%= flower.name %></h3>
+          <p><%= flower.price %> đ</p>
+          <p>
+            <%= link_to t(:details), "#", class: "btn btn-primary", role: "button" %>
+            <%= link_to t(:addcart), "#", class: "btn btn-default", role: "button" %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+  <% end %>
+</div>
