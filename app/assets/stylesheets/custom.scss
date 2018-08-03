@@ -1,6 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
+@import 'color';
 
 /* header */
 .logo {
@@ -17,7 +18,7 @@
 /* footer */
 .page-footer {
   .container {
-    background-color: #e2e2e2;
+    background-color: $light-gray;
   }
   .box-html {
     margin-bottom: 20px;
@@ -27,13 +28,86 @@
       .sale-policy-block {
         margin-top: 20px;
         margin-left: 20px;
-        background-color: #f46164;
+        background-color: $red-pink;
         padding: 20px;
         font-size: 20px;
         text-transform: uppercase;
-        color: #ffffff;
+        color: $white;
       }
     }
   }
 }
 
+/* sidebar */
+aside {
+  section {
+    padding: 10px 0;
+    section.user_info {
+      margin-top: 20px;
+    }
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+ .gravatar {
+  float: left;
+  margin-right: 10px;
+}
+ .gravatar_edit {
+  margin-top: 15px;
+}
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* forms */
+
+input, textarea, .uneditable-input {
+  border: 1px solid $dark-light;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+select, .selected {
+  border: 1px solid $dark-light;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+  height: 35px;
+  border-radius: 2px;
+}
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}

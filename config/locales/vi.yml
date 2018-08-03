@@ -57,3 +57,32 @@ vi:
       image: "Hình ảnh"
       price: "Giá"
       discount: "Chiết khấu"
+  users:
+    new:
+      sign: "Đăng nhập"
+      name: "Tên"
+      sex: "Giới tính"
+      male: "Nữ"
+      female: "Nam"
+      female: "Khác"
+      address: "Địa chỉ"
+      username: "Tên đăng nhập"
+      email: "Email"
+      pass: "Mật khẩu"
+      con: "Nhập lại mật khẩu"
+      creat: "Tạo tài khoản"
+    create:
+      welcome: "Chào mừng bạn đến với Flower Shop!"
+    show:
+      us: "Không tìm thấy người dùng này!"
+  shared:
+    error_messages:
+      this: "Bạn điền sai "
+      err: "lỗi."
+  activerecord:
+    attributes:
+      user:
+        sexes:
+          male: "Nam"
+          female: "Nữ"
+          trans: "Chuyển giới"
