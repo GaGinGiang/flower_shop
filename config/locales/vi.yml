@@ -22,9 +22,13 @@ vi:
       product: "Sản phẩm"
       contact: "Liên hệ"
       search: "Tìm kiếm"
+      l_in: "Đăng nhập"
+      sign: "Đăng ký"
+      users: "Người dùng"
       account: "Tài khoản"
-      setting: "Cài đặt"
-      logout: "Đăng xuất"
+      settings: "Cài đặt"
+      profile: "Thông tin tài khoản"
+      l_out: "Đăng xuất"
       previous: "Trước"
       next: "Sau"
     footer:
@@ -33,8 +37,6 @@ vi:
       policy: "Chính sách"
       social: "Mạng xã hội"
       guarantee: "Chính sách bảo hành"
-      register: "Đăng ký miễn phí"
-      signup: "Đăng ký!"
       repay: "Hoàn trả trong 30 ngày"
       ship: "Miễn phí vận chuyển"
       payment: "Thanh toán linh hoạt"
@@ -59,12 +61,12 @@ vi:
       discount: "Chiết khấu"
   users:
     new:
-      sign: "Đăng nhập"
+      sign: "Đăng ký"
       name: "Tên"
       sex: "Giới tính"
       male: "Nữ"
       female: "Nam"
-      female: "Khác"
+      other: "Chưa biết"
       address: "Địa chỉ"
       username: "Tên đăng nhập"
       email: "Email"
@@ -75,6 +77,14 @@ vi:
       welcome: "Chào mừng bạn đến với Flower Shop!"
     show:
       us: "Không tìm thấy người dùng này!"
+    edit:
+      edit: "Chỉnh sửa thông tin người dùng"
+      update: "Cập nhật thông tin cá nhấn"
+      save: "Lưu thay đổi"
+      change: "Thay đổi"
+      plz: "Xin hãy đăng nhập."
+    update:
+      profile_update: "Thông tin đã được cập nhật"
   shared:
     error_messages:
       this: "Bạn điền sai "
@@ -85,4 +95,16 @@ vi:
         sexes:
           male: "Nam"
           female: "Nữ"
-          trans: "Chuyển giới"
+          other: "Chưa biết"
+  sessions:
+    new:
+      log: "Đăng nhập"
+      email: "Email"
+      pass: "Mật khẩu"
+      new: "Bạn chưa có tài khoản?"
+      sign: "Đăng ký ngay!"
+      remember: "Nhớ mật khẩu trong lần đăng nhập tới."
+    create:
+      log: "Đăng nhập"
+      sign: "Đăng nhập ngay!"
+      inv: "Tài khoản hoặc mật khẩu không hợp lệ."

@@ -22,9 +22,13 @@ en:
       product: "Product"
       contact: "Contact"
       search: "Search"
+      sign: "Sign up"
+      l_in: "Log in"
+      users: "Users"
       account: "Account"
-      setting: "Setting"
-      logout: "Log out"
+      settings: "Settings"
+      profile: "Profile"
+      l_out: "Log out"
       previous: "Previous"
       next: "Next"
     footer:
@@ -33,8 +37,6 @@ en:
       policy: "Policy"
       social: "Social"
       guarantee: "Guarantee Policy"
-      register: "Register for free"
-      signup: "Sign up!"
       repay: "Repay for 30 days"
       ship: "No shipping charge"
       payment: "Flexible payment"
@@ -75,6 +77,14 @@ en:
       welcome: "Welcome to the Flower Shop!"
     show:
       us: "User not found!"
+    edit:
+      edit: "Edit user"
+      update: "Update your profile"
+      save: "Save changes"
+      change: "Change"
+      plz: "Please log in."
+    update:
+      profile_update: "Profile updated"
   shared:
     error_messages:
       this: "The form contains"
@@ -85,4 +95,16 @@ en:
         sexes:
           male: "Male"
           female: "Female"
-          trans: "Trans"
+          other: "Others"
+  sessions:
+    new:
+      log: "Log in"
+      email: "Email"
+      pass: "Password"
+      new: "New user?"
+      sign: "Sign up now!"
+      remember: "Remember me on this computer"
+    create:
+      log: "Log in"
+      sign: "Sign up now!"
+      inv: "Invalid email/password combination."

@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-  enum sex: {male: 1, female: 2, trans: 3}
+  attr_accessor :remember_token
+  enum sex: {male: 1, female: 2, other: 3}
   has_many :bills
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -23,9 +24,36 @@ class User < ApplicationRecord
     def sex_attributes_for_select
       sexes.map do |sex, _|
         [I18n.t("activerecord.attributes.#{model_name.i18n_key}.sexes.#{sex}"),
-          ex]
+          sex]
       end
     end
+
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create(string, cost: cost)
+    end
+
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+  end
+
+  def remember
+    self.remember_token = User.new_token
+    update_attributes remember_digest: User.digest(remember_token)
+  end
+
+  def authenticated? remember_token
+    return false if remember_digest.nil?
+    BCrypt::Password.new(remember_digest).is_password? remember_token
+  end
+
+  def forget
+    update_attribute(:remember_digest, nil)
   end
 
   private
