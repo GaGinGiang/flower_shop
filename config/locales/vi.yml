@@ -19,7 +19,7 @@ vi:
     header:
       home: "Trang Chủ"
       about: "Giới thiệu"
-      product: "Sản phẩm"
+      product: "Loại hoa"
       contact: "Liên hệ"
       search: "Tìm kiếm"
       account: "Tài khoản"
@@ -27,6 +27,14 @@ vi:
       logout: "Đăng xuất"
       previous: "Trước"
       next: "Sau"
+      congratulation: "Hoa Chúc Mừng"
+      birthday: "Hoa Sinh Nhật"
+      wedding: "Hoa Cưới"
+    home:
+      new: "Hàng Mới Về"
+      congratulation: "Hoa Chúc Mừng"
+      birthday: "Hoa Sinh Nhật"
+      wedding: "Hoa Cưới"
     footer:
       aboutus: "Về chúng tôi"
       address: "Địa chỉ"
