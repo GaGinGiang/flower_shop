@@ -57,3 +57,32 @@ en:
       image: "Image"
       price: "Price"
       discount: "Discount"
+  users:
+    new:
+      sign: "Sign up"
+      name: "Name"
+      sex: "Sex"
+      male: "Male"
+      female: "Female"
+      other: "Other"
+      address: "Address"
+      username: "Username"
+      email: "Email"
+      pass: "Password"
+      con: "Password confirmation"
+      creat: "Create my account"
+    create:
+      welcome: "Welcome to the Flower Shop!"
+    show:
+      us: "User not found!"
+  shared:
+    error_messages:
+      this: "The form contains"
+      err: "error"
+  activerecord:
+    attributes:
+      user:
+        sexes:
+          male: "Male"
+          female: "Female"
+          trans: "Trans"

@@ -12,26 +12,29 @@
     <%= render "layouts/header" %>
     <div class="container">
       <h1><%= yield :h1_tag %></h1>
-    <%= yield %>
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <%= image_tag("anh1.jpg") %>
-          <div class="caption">
-            <h3>...</h3>
-            <p>...</p>
-            <p>
-              <%= link_to t(:details), "#", class: "btn btn-primary", role: "button" %>
-              <%= link_to t(:addcart), "#", class: "btn btn-default", role: "button" %>
-            </p>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <%= image_tag("anh1.jpg") %>
+            <div class="caption">
+              <h3>...</h3>
+              <p>...</p>
+              <p>
+                <%= link_to t(:details), "#", class: "btn btn-primary", role: "button" %>
+                <%= link_to t(:addcart), "#", class: "btn btn-default", role: "button" %>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <p>
-      <%= link_to "English", locale:"en" %>
-      <%= link_to "Vietnamese", locale:"vi" %>
-    </p>
+      <p>
+        <%= link_to "English", locale:"en" %>
+        <%= link_to "Vietnamese", locale:"vi" %>
+      </p>
     </div>
     <%= render "layouts/footer" %>
   </body>
