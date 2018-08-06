@@ -19,7 +19,7 @@ en:
     header:
       home: "Home"
       about: "About"
-      product: "Product"
+      product: "Category"
       contact: "Contact"
       search: "Search"
       account: "Account"
@@ -27,6 +27,15 @@ en:
       logout: "Log out"
       previous: "Previous"
       next: "Next"
+      congratulation: "Flower for Congratulations"
+      birthday: "Flower for Birthday"
+      wedding: "Flower for Wedding"
+      signup: "Sign up"
+    home:
+      new: "New"
+      congratulation: "Flower for Congratulations"
+      birthday: "Flower for Birthday"
+      wedding: "Flower for Wedding"
     footer:
       aboutus: "About us"
       address: "Address"
@@ -34,7 +43,6 @@ en:
       social: "Social"
       guarantee: "Guarantee Policy"
       register: "Register for free"
-      signup: "Sign up!"
       repay: "Repay for 30 days"
       ship: "No shipping charge"
       payment: "Flexible payment"
