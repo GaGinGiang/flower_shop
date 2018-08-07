@@ -3,9 +3,12 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   before_action :category
   before_action :session_cart
+  protect_from_forgery with: :exception
+  include SessionsHelper
   def category
     @categories = Category.all
   end
+
 
   private
 
